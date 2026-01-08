@@ -217,4 +217,4 @@ __marimo__/
 
 # game log
 game_state.jsonl
-
+game_events.jsonl
