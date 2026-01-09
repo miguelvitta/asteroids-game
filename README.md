@@ -1,9 +1,8 @@
 # Asteroids Game
 
-A simple **Python implementation of the classic Asteroids arcade game**.  
-Control a spaceship, destroy asteroids, and avoid collisions as they float through space.
-
-This project is written in Python and uses basic game loop logic and object interactions to recreate the traditional Asteroids experience.
+A **Python recreation of the classic Asteroids arcade game** using Pygame.  
+Control a spaceship, destroy asteroids, avoid collisions, and survive as long as possible.  
+The game features modular code, asteroid splitting, and simple physics for fun and easy extensibility.
 
 ---
 
@@ -36,41 +35,38 @@ This project requires:
 - Python (version 3.7+)
 - A terminal/command prompt
 
-*(Optional: If you add libraries like `pygame`, list them here with installation instructions.)*
+## 🛠️ Installation
 
----
+This project uses **uv** for Python environment and dependency management.
 
-## 📦 Installation
-
-Clone the repository:
+1. **Clone the repository**
 
 ```bash
 git clone https://github.com/miguelvitta/asteroids-game.git
 cd asteroids-game
 ````
 
-Install dependencies if needed:
+1. **Install dependencies**
+
+uv uses the `uv.lock` file to lock dependencies. To install them, run:
 
 ```bash
-# Example if using a virtual environment
-python -m venv venv
-source venv/bin/activate      # macOS / Linux
-venv\Scripts\activate         # Windows
-
-pip install -r requirements.txt
+uv install
 ```
 
-*(If no requirements file exists, remove or update this step.)*
+This will:
 
----
+- Create a virtual environment for the project
 
-## ▶️ Running the Game
+- Install **pygame==2.6.1** as specified in `uv.lock` and `pyproject.toml`
 
-To start the game, run:
+1. **Run the game**
 
 ```bash
-python main.py
+uv run main.py
 ```
+
+This runs the game using the uv-managed Python environment without requiring manual activation of a virtual environment.
 
 Use the keyboard controls to rotate, thrust, and shoot.
 
@@ -90,12 +86,6 @@ Use the keyboard controls to rotate, thrust, and shoot.
 
 ---
 
-## 🧪 Testing
-
-*(Add instructions here if you include test scripts.)*
-
----
-
 ## 🙌 Contributing
 
 Contributions are welcome!
@@ -110,7 +100,7 @@ Contributions are welcome!
 
 ## 📄 License
 
-*(Add your license info here, e.g., MIT License)*
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
